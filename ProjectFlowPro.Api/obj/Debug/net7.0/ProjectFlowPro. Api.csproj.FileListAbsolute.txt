@@ -1,0 +1,42 @@
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\appsettings.Development.json
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\appsettings.json
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\ProjectFlowPro. Api.exe
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\ProjectFlowPro. Api.deps.json
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\ProjectFlowPro. Api.runtimeconfig.json
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\ProjectFlowPro. Api.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\ProjectFlowPro. Api.pdb
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\AutoMapper.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\DotNetEnv.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\MySqlConnector.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\Sprache.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\ProjectFlowPro.Core.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\ProjectFlowPro.Data.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\ProjectFlowPro.Core.pdb
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\bin\Debug\net7.0\ProjectFlowPro.Data.pdb
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ProjectFlowPro. Api.csproj.AssemblyReference.cache
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ProjectFlowPro. Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ProjectFlowPro. Api.AssemblyInfoInputs.cache
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ProjectFlowPro. Api.AssemblyInfo.cs
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ProjectFlowPro. Api.csproj.CoreCompileInputs.cache
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ProjectFlowPro. Api.MvcApplicationPartsAssemblyInfo.cs
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ProjectFlowPro. Api.MvcApplicationPartsAssemblyInfo.cache
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\staticwebassets\msbuild.ProjectFlowPro. Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.ProjectFlowPro. Api.props
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ProjectFlowPro. Api.props
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ProjectFlowPro. Api.props
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\staticwebassets.pack.json
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\staticwebassets.build.json
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\staticwebassets.development.json
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\scopedcss\bundle\ProjectFlowPro. Api.styles.css
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ProjectFlowPro. Api.csproj.CopyComplete
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ProjectFlowPro. Api.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\refint\ProjectFlowPro. Api.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ProjectFlowPro. Api.pdb
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ProjectFlowPro. Api.genruntimeconfig.cache
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Api\obj\Debug\net7.0\ref\ProjectFlowPro. Api.dll
