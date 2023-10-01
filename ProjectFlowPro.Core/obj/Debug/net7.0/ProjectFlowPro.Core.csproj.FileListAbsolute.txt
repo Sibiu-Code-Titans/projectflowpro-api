@@ -1,0 +1,15 @@
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\bin\Debug\net7.0\ProjectFlowPro.Core.deps.json
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\bin\Debug\net7.0\ProjectFlowPro.Core.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\bin\Debug\net7.0\ProjectFlowPro.Core.pdb
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\bin\Debug\net7.0\ProjectFlowPro.Data.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\bin\Debug\net7.0\ProjectFlowPro.Data.pdb
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\obj\Debug\net7.0\ProjectFlowPro.Core.csproj.AssemblyReference.cache
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\obj\Debug\net7.0\ProjectFlowPro.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\obj\Debug\net7.0\ProjectFlowPro.Core.AssemblyInfoInputs.cache
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\obj\Debug\net7.0\ProjectFlowPro.Core.AssemblyInfo.cs
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\obj\Debug\net7.0\ProjectFlowPro.Core.csproj.CoreCompileInputs.cache
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\obj\Debug\net7.0\ProjectFlowPro.Core.csproj.CopyComplete
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\obj\Debug\net7.0\ProjectFlowPro.Core.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\obj\Debug\net7.0\refint\ProjectFlowPro.Core.dll
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\obj\Debug\net7.0\ProjectFlowPro.Core.pdb
+D:\GitProjects\projectflowpro-api\ProjectFlowPro.Core\obj\Debug\net7.0\ref\ProjectFlowPro.Core.dll
