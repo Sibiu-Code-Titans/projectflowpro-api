@@ -9,7 +9,8 @@ namespace ProjectFlowPro
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            DotNetEnv.Env.Load("dev.env");
+            var environment = builder.Configuration.GetValue<string>("ENV_FILE");
+            DotNetEnv.Env.Load(environment!);
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
