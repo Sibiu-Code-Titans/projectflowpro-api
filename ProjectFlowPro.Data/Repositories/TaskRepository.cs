@@ -6,7 +6,6 @@ namespace ProjectFlowPro.Data.Repositories
     {
         public TaskRepository()
         {
-            
         }
     }
 }
