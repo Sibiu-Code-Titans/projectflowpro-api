@@ -9,9 +9,6 @@
   <ItemGroup>
     <Folder Include="Hardcodings\Common\" />
     <Folder Include="Hardcodings\TaskHardcodings\" />
-    <Folder Include="Models\TaskModels\" />
-    <Folder Include="DBAccess\" />
-    <Folder Include="Repositories\IRepositories\" />
   </ItemGroup>
 
   <ItemGroup>

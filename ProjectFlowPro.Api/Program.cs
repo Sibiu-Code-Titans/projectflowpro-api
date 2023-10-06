@@ -1,5 +1,8 @@
 
-using System.IO.Pipes;
+using ProjectFlowPro.Core.Services;
+using ProjectFlowPro.Core.Services.IServices;
+using ProjectFlowPro.Data.Repositories;
+using ProjectFlowPro.Data.Repositories.IRepositories;
 
 namespace ProjectFlowPro
 {
@@ -41,12 +44,12 @@ namespace ProjectFlowPro
 
         private static void ServiceInjections(WebApplicationBuilder builder)
         {
-
+            builder.Services.AddScoped<ITaskService, TaskService>();
         }
 
         private static void RepositoryInjections(WebApplicationBuilder builder)
         {
-
+            builder.Services.AddScoped<ITaskRepository, TaskRepository>();
         }
 
         private static void UtilityInjections(WebApplicationBuilder builder)
