@@ -16,5 +16,16 @@ namespace ProjectFlowPro.Data.DatabaseAccess
                 return listOfEntities.ToList();
             }
         }
+
+        public static async Task<int> Insert(string queryString, object? param = null)
+        {
+            using (var connection = new NpgsqlConnection(Environment.GetEnvironmentVariable(EnvironmentVariables.CONNECTION_STRING)))
+            {
+                connection.Open();
+                var result = await connection.QuerySingleAsync<int>(queryString, param);
+                connection.Close();
+                return result;
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ProjectFlowPro.Core.Dtos.TaskDtos
 {
-    public class TaskDetailsDto
+    public sealed class TaskDetailsDto
     {
         public String TaskId { get; set; }
         public String Title { get; set; }

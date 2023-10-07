@@ -14,6 +14,7 @@ namespace ProjectFlowPro.Core.Profiles
 
             CreateMap<TaskDetailsDto, TaskModel>();
             CreateMap<TaskPreviewDto, TaskModel>();
+            CreateMap<AddTaskDto, TaskModel>();
         }
     }
 }

@@ -1,6 +1,9 @@
-﻿namespace ProjectFlowPro.Core.Services.IServices
+﻿using ProjectFlowPro.Core.Dtos.TaskDtos;
+
+namespace ProjectFlowPro.Core.Services.IServices
 {
     public interface ITaskService
     {
+        Task<int> AddTask(AddTaskDto task);
     }
 }
