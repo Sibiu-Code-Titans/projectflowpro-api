@@ -23,6 +23,8 @@ namespace ProjectFlowPro
             RepositoryInjections(builder);
             UtilityInjections(builder);
 
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -54,7 +56,6 @@ namespace ProjectFlowPro
 
         private static void UtilityInjections(WebApplicationBuilder builder)
         {
-
         }
     }
 }

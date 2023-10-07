@@ -7,13 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Hardcodings\Common\" />
     <Folder Include="Hardcodings\TaskHardcodings\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.4" />
     <PackageReference Include="DotNetEnv" Version="2.5.0" />
-    <PackageReference Include="MySqlConnector" Version="2.2.7" />
+    <PackageReference Include="Npgsql" Version="7.0.6" />
   </ItemGroup>
 
 </Project>
