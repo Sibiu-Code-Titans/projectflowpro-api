@@ -1,6 +1,7 @@
 using AutoMapper;
 using ProjectFlowPro.Core.Dtos.TaskDtos;
 using ProjectFlowPro.Core.Services.IServices;
+using ProjectFlowPro.Data.Models.TaskModels;
 using ProjectFlowPro.Data.Repositories.IRepositories;
 
 namespace ProjectFlowPro.Core.Services
@@ -14,6 +15,11 @@ namespace ProjectFlowPro.Core.Services
         {
             _taskRepository = taskRepository;
             _mapper = mapper;
+        }
+
+        public async Task<int> AddTask(AddTaskDto task)
+        {
+            return await _taskRepository.AddTask(_mapper.Map<TaskModel>(task));
         }
     }
 }

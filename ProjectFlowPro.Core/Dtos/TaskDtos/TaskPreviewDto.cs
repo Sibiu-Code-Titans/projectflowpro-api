@@ -1,6 +1,6 @@
 ﻿namespace ProjectFlowPro.Core.Dtos.TaskDtos
 {
-    internal class TaskPreviewDto
+    public sealed class TaskPreviewDto
     {
         public int StatusId { get; set; }
         public string Title { get; set; }
