@@ -24,12 +24,7 @@ namespace ProjectFlowPro.Core.Services
 
         public async Task<TaskDescriptionDto> GetTaskDescription(int taskId)
         {
-            var task = new TaskDescriptionDto
-            {
-                Description = await _taskRepository.GetTaskDescription(taskId)
-            };
-
-            return task;
+            return(_mapper.Map<TaskDescriptionDto>(await _taskRepository.GetTaskDescription(taskId)));
         }
     }
 }

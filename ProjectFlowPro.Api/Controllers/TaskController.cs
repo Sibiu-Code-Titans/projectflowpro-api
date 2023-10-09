@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProjectFlowPro.Core.Dtos.TaskDtos;
 using ProjectFlowPro.Core.Services.IServices;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjectFlowPro._Api.Controllers
 {
@@ -22,14 +23,14 @@ namespace ProjectFlowPro._Api.Controllers
         }
 
         [HttpGet("get-description")]
-        public async Task<IActionResult> GetTaskDescription(int taskId)
+        public async Task<IActionResult> GetTaskDescription([Required]int taskId)
         {
             var task = await _taskService.GetTaskDescription(taskId);
 
-            if (task.Description == null)
-                return NotFound();
+            if (task == null)
+                return NoContent();
 
-            return Ok(task.Description);
+            return Ok(task);
         }
     }
 }
