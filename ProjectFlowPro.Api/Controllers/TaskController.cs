@@ -20,5 +20,11 @@ namespace ProjectFlowPro._Api.Controllers
         {
             return Ok(await _taskService.AddTask(addTask));
         }
+
+        [HttpGet($"{{taskId}}")]
+        public async Task<IActionResult> GetTaskDescriptionById(int taskId)
+        {
+            return Ok(await _taskService.GetTaskDescriptionById(taskId));
+        }
     }
 }
