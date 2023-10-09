@@ -35,7 +35,23 @@ namespace ProjectFlowPro.Data.Repositories
                 TaskId = taskId,
             };
 
-            return await DBAccess.GetTaskById(query, param);
+            return await DBAccess.GetModelById<TaskModel>(query, param);
+        }
+
+        public async Task<string?> GetTaskDescription(int taskId)
+        {
+            var query = @"
+                SELECT 
+                    Description
+                FROM Task
+                WHERE TaskId = @TaskId";
+
+            var param = new
+            {
+                TaskId = taskId,
+            };
+
+            return await DBAccess.GetTaskDescription(query, param);
         }
     }
 }

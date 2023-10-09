@@ -22,14 +22,14 @@ namespace ProjectFlowPro.Core.Services
             return await _taskRepository.AddTask(_mapper.Map<TaskModel>(task));
         }
 
-        public async Task<string> GetTaskDescriptionById(int taskId)
+        public async Task<TaskDescriptionDto> GetTaskDescription(int taskId)
         {
-            var task = await _taskRepository.GetTaskById(taskId);
+            var task = new TaskDescriptionDto
+            {
+                Description = await _taskRepository.GetTaskDescription(taskId)
+            };
 
-            if (task == null)
-                throw new NullReferenceException("We didn't find the Task.");
-
-            return task.Description;
+            return task;
         }
     }
 }

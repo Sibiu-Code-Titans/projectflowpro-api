@@ -6,6 +6,6 @@ namespace ProjectFlowPro.Core.Services.IServices
     {
         Task<int> AddTask(AddTaskDto task);
 
-        Task<string> GetTaskDescriptionById(int taskId);
+        Task<TaskDescriptionDto> GetTaskDescription(int taskId);
     }
 }

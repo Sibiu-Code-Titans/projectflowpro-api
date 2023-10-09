@@ -29,12 +29,23 @@ namespace ProjectFlowPro.Data.DatabaseAccess
             }
         }
 
-        public static async Task<TaskModel?> GetTaskById(string queryString, object? param = null)
+        public static async Task<T?> GetModelById<T>(string queryString, object? param = null)
         {
             using (var connection = new NpgsqlConnection(Environment.GetEnvironmentVariable(EnvironmentVariables.CONNECTION_STRING)))
             {
                 connection.Open();
-                var result = await connection.QuerySingleOrDefaultAsync<TaskModel?>(queryString, param);
+                var result = await connection.QuerySingleOrDefaultAsync<T?>(queryString, param);
+                connection.Close();
+                return result;
+            }
+        }
+
+        public static async Task<string?> GetTaskDescription(string queryString, object? param = null)
+        {
+            using (var connection = new NpgsqlConnection(Environment.GetEnvironmentVariable(EnvironmentVariables.CONNECTION_STRING)))
+            {
+                connection.Open();
+                var result = await connection.QuerySingleOrDefaultAsync<string?>(queryString, param);
                 connection.Close();
                 return result;
             }
