@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using ProjectFlowPro.Core.Dtos.TaskDtos;
 using ProjectFlowPro.Core.Services.IServices;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjectFlowPro._Api.Controllers
 {
@@ -19,6 +20,17 @@ namespace ProjectFlowPro._Api.Controllers
         public async Task<IActionResult> AddTask(AddTaskDto addTask)
         {
             return Ok(await _taskService.AddTask(addTask));
+        }
+
+        [HttpGet("get-description")]
+        public async Task<IActionResult> GetTaskDescription([Required]int taskId)
+        {
+            var task = await _taskService.GetTaskDescription(taskId);
+
+            if (task == null)
+                return NoContent();
+
+            return Ok(task);
         }
     }
 }

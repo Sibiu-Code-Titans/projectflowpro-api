@@ -11,6 +11,7 @@ namespace ProjectFlowPro.Core.Profiles
             CreateMap<TaskModel, TaskDetailsDto>()
                 .ForMember(dest => dest.TaskId, opt => opt.MapFrom(src => src.TaskId.ToString()));
             CreateMap<TaskModel, TaskPreviewDto>();
+            CreateMap<TaskModel, TaskDescriptionDto>();
 
             CreateMap<TaskDetailsDto, TaskModel>();
             CreateMap<TaskPreviewDto, TaskModel>();

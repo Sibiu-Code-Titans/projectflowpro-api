@@ -21,5 +21,10 @@ namespace ProjectFlowPro.Core.Services
         {
             return await _taskRepository.AddTask(_mapper.Map<TaskModel>(task));
         }
+
+        public async Task<TaskDescriptionDto> GetTaskDescription(int taskId)
+        {
+            return(_mapper.Map<TaskDescriptionDto>(await _taskRepository.GetTaskDescription(taskId)));
+        }
     }
 }
