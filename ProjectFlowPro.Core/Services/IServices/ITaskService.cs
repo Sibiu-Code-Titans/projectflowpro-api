@@ -7,5 +7,7 @@ namespace ProjectFlowPro.Core.Services.IServices
         Task<int> AddTask(AddTaskDto task);
 
         Task<TaskDescriptionDto> GetTaskDescription(int taskId);
+
+        Task<int> DeleteTask(int taskId);
     }
 }

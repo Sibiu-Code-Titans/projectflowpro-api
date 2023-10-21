@@ -32,5 +32,16 @@ namespace ProjectFlowPro._Api.Controllers
 
             return Ok(task);
         }
+
+        [HttpDelete("delete-task")]
+        public async Task<IActionResult> DeleteTask([Required] int taskId)
+        {
+            var task = await _taskService.DeleteTask(taskId);
+
+            if (task == 0)
+                return NoContent();
+
+            return Ok(task);
+        }
     }
 }

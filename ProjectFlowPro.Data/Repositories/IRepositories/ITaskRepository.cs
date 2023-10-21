@@ -9,5 +9,7 @@ namespace ProjectFlowPro.Data.Repositories.IRepositories
         Task<TaskModel?> GetTaskById(int taskId);
 
         Task<TaskModel?> GetTaskDescription(int taskId);
+
+        Task<int> DeleteTask(int taskId);
     }
 }
