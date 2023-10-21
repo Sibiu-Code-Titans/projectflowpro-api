@@ -53,5 +53,20 @@ namespace ProjectFlowPro.Data.Repositories
 
             return await DBAccess.Get<TaskModel>(query, param);
         }
+
+        public async Task<int> DeleteTask(int taskId)
+        {
+            var query = @"
+                DELETE 
+                FROM Task 
+                WHERE TaskId = @TaskId";
+
+            var param = new
+            {
+                TaskId = taskId,
+            };
+
+            return await DBAccess.Delete(query, param);
+        }
     }
 }

@@ -24,7 +24,12 @@ namespace ProjectFlowPro.Core.Services
 
         public async Task<TaskDescriptionDto> GetTaskDescription(int taskId)
         {
-            return(_mapper.Map<TaskDescriptionDto>(await _taskRepository.GetTaskDescription(taskId)));
+            return (_mapper.Map<TaskDescriptionDto>(await _taskRepository.GetTaskDescription(taskId)));
+        }
+
+        public async Task<int> DeleteTask(int taskId)
+        {
+            return await _taskRepository.DeleteTask(taskId);
         }
     }
 }
