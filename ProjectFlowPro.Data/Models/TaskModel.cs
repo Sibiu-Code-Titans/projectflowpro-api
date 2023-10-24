@@ -10,7 +10,6 @@ namespace ProjectFlowPro.Data.Models
         public DateTime CreatedDatetime { get; set; }
         public DateTime UpdatedDatetime { get; set; }
         public DateTime? Deadline { get; set; }
-        [ForeignKey("ColumnId")]
         public int ColumnId { get; set; }
         public BoardColumnModel BoardColumn { get; set; }
     }
