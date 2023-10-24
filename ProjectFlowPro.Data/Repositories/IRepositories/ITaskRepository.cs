@@ -1,4 +1,4 @@
-﻿using ProjectFlowPro.Data.Models.TaskModels;
+﻿using ProjectFlowPro.Data.Models;
 
 namespace ProjectFlowPro.Data.Repositories.IRepositories
 {

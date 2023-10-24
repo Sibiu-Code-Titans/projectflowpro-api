@@ -8,6 +8,8 @@ namespace ProjectFlowPro.Core.Services.IServices
 
         Task<TaskDescriptionDto> GetTaskDescription(int taskId);
 
+        Task<TaskNavbar?> GetTaskNavbar(int taskId);
+
         Task<int> DeleteTask(int taskId);
     }
 }

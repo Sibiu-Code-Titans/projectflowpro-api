@@ -31,6 +31,17 @@ namespace ProjectFlowPro._Api.Controllers
                 return NoContent();
 
             return Ok(task);
+        }     
+        
+        [HttpGet("get-navbar")]
+        public async Task<IActionResult> GetTaskNavbar([Required]int taskId)
+        {
+            var task = await _taskService.GetTaskNavbar(taskId);
+
+            if (task == null)
+                return NoContent();
+
+            return Ok(task);
         }
 
         [HttpDelete("delete-task")]

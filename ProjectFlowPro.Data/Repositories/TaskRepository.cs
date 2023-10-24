@@ -1,5 +1,5 @@
 ﻿using ProjectFlowPro.Data.DatabaseAccess;
-using ProjectFlowPro.Data.Models.TaskModels;
+using ProjectFlowPro.Data.Models;
 using ProjectFlowPro.Data.Repositories.IRepositories;
 
 namespace ProjectFlowPro.Data.Repositories
@@ -20,14 +20,20 @@ namespace ProjectFlowPro.Data.Repositories
         {
             var query = @"
                 SELECT 
-                    TaskId,
-                    Title,
-                    Description,
-                    CreatedDateTime,
-                    UpdatedDateTime,
-                    Deadline,
-                    Columnid
+                    Task.TaskId,
+                    Task.Title,
+                    Task.Description,
+                    Task.CreatedDateTime,
+                    Task.UpdatedDateTime,
+                    Task.Deadline,
+                    Task.ColumnId,
+                    BoardColumn.columnid AS Column_Id,
+                    BoardColumn.StatusName,
+                    BoardColumn.StatusDescription,
+                    BoardColumn.StatusColor,
+                    BoardColumn.Position
                 FROM Task
+                INNER JOIN BoardColumn ON Task.ColumnId = BoardColumn.ColumnId
                 WHERE TaskId = @TaskId";
 
             var param = new
@@ -35,7 +41,17 @@ namespace ProjectFlowPro.Data.Repositories
                 TaskId = taskId,
             };
 
-            return await DBAccess.Get<TaskModel>(query, param);
+            return await DBAccess.Get<TaskModel, BoardColumnModel>
+                (
+                    query,
+                    (task, boardColumn) =>
+                    {
+                        task.BoardColumn = boardColumn;
+                        return task;
+                    },
+                    param,
+                    splitOn: "Column_Id"
+                );
         }
 
         public async Task<TaskModel?> GetTaskDescription(int taskId)

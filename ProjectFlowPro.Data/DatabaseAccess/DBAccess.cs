@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Npgsql;
 using ProjectFlowPro.Data.Hardcodings.Common;
+using System.Data;
 
 namespace ProjectFlowPro.Data.DatabaseAccess
 {
@@ -36,6 +37,24 @@ namespace ProjectFlowPro.Data.DatabaseAccess
                 var result = await connection.QuerySingleOrDefaultAsync<T>(queryString, param);
                 connection.Close();
                 return result;
+            }
+        }
+
+        public static async Task<T> Get<T, U>(string queryString, Func<T, U, T> map, object? param = null, string splitOn = "")
+        {
+            using (var connection = new NpgsqlConnection(Environment.GetEnvironmentVariable(EnvironmentVariables.CONNECTION_STRING)))
+            {
+                connection.Open();
+                var result = await connection.QueryAsync<T, U, T>(
+                    queryString,
+                    map,
+                    param,
+                    splitOn: splitOn,
+                    commandType: CommandType.Text
+                );
+                connection.Close();
+
+                return result.FirstOrDefault();
             }
         }
 
